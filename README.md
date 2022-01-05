@@ -11,3 +11,23 @@ VACUUM_TOKEN=
 ```
 
 You can use (this app)[https://github.com/Maxmudjon/Get_MiHome_devices_token/releases] to obtain both the token and ip adress of your vacuum. That'll also give you an indication as to whether your vacuum is supported by this. All `dreame.vacuum.*` should work, but I've only tested this with my `dreame.vacuum.mc1808`.
+
+## Endpoints
+
+It is a very simple and straight forward API.
+
+### `GET /`
+
+Gets the device status and battery charge of the vacuum in JSON format.
+
+### `GET /start`
+
+Starts the cleaning routine.
+
+### `GET /pause`
+
+Pause the cleaning routine.
+
+### `GET /home`
+
+Returns the vacuum to its docking station.
